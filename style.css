@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.4rem;
+  color: #2d3748;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: #718096;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #667eea;
+}
+
+button {
+  padding: 12px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+.result-card {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.hidden {
+  display: none;
+}
+
+.weather-info {
+  margin: 15px 0;
+}
+
+.temp {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2d3748;
+  display: block;
+}
+
+.condition {
+  font-size: 1.1rem;
+  color: #4a5568;
+}
+
+.ai-box {
+  margin-top: 20px;
+  background: #f7fafc;
+  padding: 15px;
+  border-radius: 12px;
+  border-left: 4px solid #667eea;
+  text-align: left;
+}
+
+.ai-box h3 {
+  font-size: 0.95rem;
+  color: #2d3748;
+  margin-bottom: 8px;
+}
+
+.ai-box p {
+  font-size: 0.9rem;
+  color: #4a5568;
+  line-height: 1.5;
+}

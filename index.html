@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Hava Durumu Tahmini</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h1>🌤️ Yapay Zeka Destekli Hava Durumu</h1>
+      <p class="subtitle">
+        Şehir adını girin, anlık hava durumunu ve AI tavsiyesini alın.
+      </p>
+
+      <div class="search-box">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Şehir giriniz (örn: Ankara, Bartın)..."
+        />
+        <button id="searchBtn">Sorgula</button>
+      </div>
+
+      <div id="resultCard" class="result-card hidden">
+        <h2 id="cityName">-</h2>
+        <div class="weather-info">
+          <span id="temperature" class="temp">--°C</span>
+          <span id="condition" class="condition">--</span>
+        </div>
+
+        <div class="ai-box">
+          <h3>🤖 AI Asistan Tavsiyesi</h3>
+          <p id="aiAdvice">Yapay zeka verileri analiz ediyor...</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
